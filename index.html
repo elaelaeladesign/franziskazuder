@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franziska Zuder</title>
+  <meta name="description" content="Franziska Zuder - Sport-Physioherapie in Villach">
+
+  <!-- Google Font: Krub -->
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand-color: #40acb6;
+      --text-color: #ffffff;
+      --bg-white: #ffffff;
+      --accent-yellow: #fbba00;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Krub', sans-serif;
+      color: var(--text-color);
+      line-height: 1.5;
+      background: var(--bg-white);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    header.header {
+      background: var(--bg-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(48px, 10vh, 120px) 16px clamp(24px, 6vh, 64px);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    img.logo {
+      max-width: min(250px, 45vw);
+      height: auto;
+      display: block;
+    }
+    main.hero {
+      background: var(--brand-color);
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: clamp(32px, 12vh, 160px) 16px;
+    }
+    .hero-inner {
+      max-width: 900px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 56px);
+      line-height: 1.1;
+      margin: 0 0 12px;
+      font-weight: 600;
+    }
+    h2 {
+      margin: 0 0 20px;
+      font-weight: 500;
+    }
+    .quote-icon {
+      width: 30px;
+      height: auto;
+      margin: 60px auto 12px;
+      display: block;
+    }
+    p.lead {
+      font-size: clamp(18px, 2.4vw, 22px);
+      margin: 0 0 18px;
+    }
+    /* Gelbe Punkte Liste */
+    .keywords {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top:20px;
+	margin-bottom: 50px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .keywords span {
+      position: relative;
+    }
+    .keywords span:not(:first-child)::before {
+      content: "•";
+      color: var(--accent-yellow);
+      position: absolute;
+      left: -18px;
+    }
+    /* Kontaktzeile */
+    .contact {
+      margin-top: 48px;
+    }
+    a {
+      color: inherit;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 2px;
+    }
+    footer.footer {
+      padding: 24px 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Weißer Bereich mit Logo -->
+  <header class="header">
+    <img class="logo" src="https://raw.githubusercontent.com/elaelaeladesign/franziskazuder/refs/heads/main/LOGO_Franziska_Zuder_4c_WEB_RGB.svg" alt="Franziska Zuder Logo" width="1000" height="400">
+  </header>
+
+  <!-- Farbfläche mit zentriertem Text -->
+  <main class="hero">
+    <div class="hero-inner">
+      <h1>Franziska Zuder</h1>
+      <h2>Sport-Physiotherapeutin</h2>
+      
+      <!-- Gänsefüßchen-Icon -->
+      <img class="quote-icon" src="https://raw.githubusercontent.com/elaelaeladesign/franziskazuder/refs/heads/main/gaensefuesschen.svg" alt="Zitat Icon">
+
+      <p class="lead">Ich begleite Hobbysportler bei Schmerzen und Bewegungseinschr&auml;nkungen zu Leichtigkeit, Freude an gesunder Bewegung, Wohlbefinden und mehr Lebensqualit&auml;t.</p>
+      
+      <!-- Drei Begriffe mit gelben Punkten -->
+      <div class="keywords">
+        <span>Physiotherapie</span>
+        <span>Gesundheitsförderung</span>
+        <span>Gesunder Rücken</span>
+      </div>
+      
+      <p class="contact">
+        Maria-Gailer Straße 27, 9500 Villach (AT)
+        · <a href="mailto:info@franziskazuder.at">info@franziskazuder.at</a>
+        · <a href="tel:+436645791436">+43 664 / 579 14 36</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
