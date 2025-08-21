@@ -31,11 +31,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: clamp(48px, 10vh, 120px) 16px clamp(24px, 6vh, 64px);
+      padding: clamp(32px, 8vh, 80px) 16px clamp(16px, 4vh, 48px);
       border-bottom: 1px solid rgba(0,0,0,.06);
     }
     img.logo {
-      max-width: min(250px, 45vw);
+      max-width: min(250px, 60vw);
       height: auto;
       display: block;
     }
@@ -46,64 +46,84 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: clamp(32px, 12vh, 160px) 16px;
+      padding: clamp(24px, 8vh, 120px) 16px;
     }
     .hero-inner {
       max-width: 900px;
     }
     h1 {
-      font-size: clamp(28px, 5vw, 56px);
-      line-height: 1.1;
+      font-size: clamp(26px, 6vw, 48px);
+      line-height: 1.2;
       margin: 0 0 12px;
       font-weight: 600;
     }
     h2 {
-      margin: 0 0 20px;
+      margin: 0 0 16px;
       font-weight: 500;
+      font-size: clamp(18px, 4.5vw, 28px);
     }
     .quote-icon {
       width: 30px;
       height: auto;
-      margin: 60px auto 12px;
+      margin: 60px auto 16px;
       display: block;
     }
     p.lead {
-      font-size: clamp(18px, 2.4vw, 22px);
+      font-size: clamp(16px, 4vw, 20px);
       margin: 0 0 18px;
     }
     /* Gelbe Punkte Liste */
     .keywords {
       display: flex;
       justify-content: center;
-      gap: 32px;
-      margin-top:20px;
-	margin-bottom: 50px;
-      font-size: 18px;
+      flex-wrap: wrap;
+      gap: 16px 24px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      font-size: clamp(16px, 4vw, 18px);
       font-weight: 500;
     }
     .keywords span {
       position: relative;
+      padding-left: 10px;
     }
     .keywords span:not(:first-child)::before {
       content: "•";
       color: var(--accent-yellow);
       position: absolute;
-      left: -18px;
+      left: -12px;
     }
     /* Kontaktzeile */
     .contact {
       margin-top: 48px;
+      font-size: clamp(14px, 3.5vw, 18px);
+      line-height: 1.4;
     }
     a {
       color: inherit;
       text-underline-offset: 2px;
       text-decoration-thickness: 2px;
+      word-break: break-word;
     }
     footer.footer {
       padding: 24px 16px;
       text-align: center;
       font-size: 14px;
       color: #555;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      img.logo {
+        max-width: 70%;
+      }
+      .keywords {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .keywords span:not(:first-child)::before {
+        display: none; /* Punkte nur bei horizontaler Ansicht */
+      }
     }
   </style>
 </head>
@@ -132,9 +152,9 @@
       </div>
       
       <p class="contact">
-        Maria-Gailer Straße 27, 9500 Villach (AT)
-        · <a href="mailto:info@franziskazuder.at">info@franziskazuder.at</a>
-        · <a href="tel:+436645791436">+43 664 / 579 14 36</a>
+        Maria-Gailer Straße 27, 9500 Villach (AT)<br>
+        <a href="mailto:info@franziskazuder.at">info@franziskazuder.at</a><br>
+        <a href="tel:+436645791436">+43 664 / 579 14 36</a>
       </p>
     </div>
   </main>
