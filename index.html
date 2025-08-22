@@ -3,11 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Franziska Zuder</title>
-  <meta name="description" content="Franziska Zuder - Sport-Physioherapie in Villach">
+  <title>Franziska Zuder – Sport-Physiotherapie in Villach</title>
+  <meta name="description" content="Physiotherapie für Hobbysportler in Villach/Kärnten. Franziska Zuder begleitet Sportler bei Schmerzen, Bewegungseinschränkungen und für einen gesunden Rücken, Gesundheitsförderung und mehr Lebensqualität.">
+  <meta name="keywords" content="Physiotherapie Villach, Sport Physiotherapie, Gesundheitsförderung, gesunder Rücken, Physiotherapeutin Kärnten, Hobbysportler Therapie, Franziska Zuder">
 
   <!-- Google Font: Krub -->
   <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Structured Data für SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physiotherapy",
+    "name": "Franziska Zuder",
+    "image": "https://raw.githubusercontent.com/elaelaeladesign/franziskazuder/refs/heads/main/LOGO_Franziska_Zuder_4c_WEB_RGB.svg",
+    "@id": "https://www.franziskazuder.at",
+    "url": "https://www.franziskazuder.at",
+    "telephone": "+43 664 5791436",
+    "email": "info@franziskazuder.at",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Maria-Gailer Straße 27",
+      "addressLocality": "Villach",
+      "postalCode": "9500",
+      "addressCountry": "AT"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Villach, Kärnten"
+    },
+    "description": "Physiotherapeutin spezialisiert auf Sport-Physiotherapie in Villach. Unterstützung bei Schmerzen, Bewegungseinschränkungen, Gesundheitsförderung und gesunder Rücken für Hobbysportler.",
+    "sameAs": [
+      "https://www.instagram.com/USERNAME"
+    ]
+  }
+  </script>
 
   <style>
     :root{
@@ -111,8 +141,16 @@
       font-size: 14px;
       color: #555;
     }
-
-    /* Responsive adjustments */
+    /* SEO versteckt */
+    .sr-only {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    /* Responsive */
     @media (max-width: 768px) {
       img.logo {
         max-width: 70%;
@@ -122,12 +160,19 @@
         gap: 12px;
       }
       .keywords span:not(:first-child)::before {
-        display: none; /* Punkte nur bei horizontaler Ansicht */
+        display: none;
       }
     }
   </style>
 </head>
 <body>
+  <!-- Unsichtbarer SEO-Block -->
+  <div class="sr-only">
+    Physiotherapeutin in Villach, spezialisiert auf Sport-Physiotherapie.  
+    Behandlung von Schmerzen, Bewegungseinschränkungen und Rückenproblemen.  
+    Fokus: Hobbysportler, Gesundheitsförderung, gesunder Rücken, mehr Lebensqualität.  
+  </div>
+
   <!-- Weißer Bereich mit Logo -->
   <header class="header">
     <img class="logo" src="https://raw.githubusercontent.com/elaelaeladesign/franziskazuder/refs/heads/main/LOGO_Franziska_Zuder_4c_WEB_RGB.svg" alt="Franziska Zuder Logo" width="1000" height="400">
@@ -139,12 +184,10 @@
       <h1>Franziska Zuder</h1>
       <h2>Sport-Physiotherapeutin</h2>
       
-      <!-- Gänsefüßchen-Icon -->
       <img class="quote-icon" src="https://raw.githubusercontent.com/elaelaeladesign/franziskazuder/refs/heads/main/gaensefuesschen.svg" alt="Zitat Icon">
 
       <p class="lead">Ich begleite Hobbysportler bei Schmerzen und Bewegungseinschr&auml;nkungen zu Leichtigkeit, Freude an gesunder Bewegung, Wohlbefinden und mehr Lebensqualit&auml;t.</p>
       
-      <!-- Drei Begriffe mit gelben Punkten -->
       <div class="keywords">
         <span>Physiotherapie</span>
         <span>Gesundheitsförderung</span>
