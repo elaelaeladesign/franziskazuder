@@ -173,16 +173,30 @@
       color: #ffffff;
     }
 
-    .hero-footer a {
-      color: #ffffff;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-      transition: color 0.3s;
-    }
+    /* Hero Footer Links */
+.hero-footer a {
+  color: #ffffff; /* normal weiß */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.3s;
+}
 
     .hero-footer a:hover {
-      color: var(--accent-yellow);
-    }
+  color: var(--accent-yellow); /* beim Hover gelb */
+}
+
+
+/* Andere Links (Mail + Telefon) bleiben weiß und ändern sich nicht */
+.contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #ffffff; /* bleibt weiß */
+}
+
+    
 
     /* SEO versteckt */
     .sr-only {
