@@ -154,12 +154,7 @@
       font-size: clamp(14px, 3.5vw, 18px);
       line-height: 1.4;
     }
-    a {
-      color: inherit;
-      text-underline-offset: 3px;
-      text-decoration-thickness: 1px;
-      word-break: break-word;
-    }
+  
     footer.footer {
       padding: 24px 16px;
       text-align: center;
@@ -173,27 +168,16 @@
       color: #ffffff;
     }
 
-    /* Hero Footer Links */
-.hero-footer a {
+ /* Alle Links: standard weiß, Hover gelb */
+a {
   color: #ffffff; /* normal weiß */
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: color 0.3s;
 }
 
-    .hero-footer a:hover {
+a:hover {
   color: var(--accent-yellow); /* beim Hover gelb */
-}
-
-
-/* Andere Links (Mail + Telefon) bleiben weiß und ändern sich nicht */
-.contact a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  color: #ffffff; /* bleibt weiß */
 }
 
     
