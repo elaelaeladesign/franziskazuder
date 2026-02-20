@@ -23,21 +23,30 @@
       color: var(--text-dark);
     }
 
+    /* Türkiser Balken */
     header.impressum-header {
       background: var(--brand-color);
-      padding: 40px 16px;
-      text-align: left;
+      padding: 40px 0;
     }
+
+    header.impressum-header .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
     header.impressum-header h1 {
       color: #ffffff;
       font-size: clamp(28px, 6vw, 48px);
       margin: 0;
       font-weight: 600;
+      text-align: left;
     }
 
+    /* Weißer Content-Bereich */
     main.impressum-content {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 0 auto 40px;
       padding: 40px 16px;
       background: var(--bg-white);
       text-align: left;
@@ -103,9 +112,11 @@
   </style>
 </head>
 <body>
-  <!-- Türkiser Balken mit Überschrift -->
+  <!-- Türkiser Balken mit Überschrift innerhalb Container -->
   <header class="impressum-header">
-    <h1>Impressum</h1>
+    <div class="container">
+      <h1>Impressum</h1>
+    </div>
   </header>
 
   <!-- Weißer Content-Bereich -->
@@ -145,8 +156,6 @@
     <a href="datenschutz.html">Datenschutz</a>
   </div>
 
-  <footer>
-    &copy; 2026 Franziska Zuder
-  </footer>
+
 </body>
 </html>
