@@ -6,14 +6,14 @@
   <title>Franziska Zuder – Sport-Physiotherapie in Villach</title>
   <meta name="description" content="Physiotherapie für Hobbysportler in Villach/Kärnten. Franziska Zuder begleitet Sportler bei Schmerzen, Bewegungseinschränkungen und für einen gesunden Rücken, Gesundheitsförderung und mehr Lebensqualität.">
   <meta name="keywords" content="Physiotherapie Villach, Sport Physiotherapie, Gesundheitsförderung, gesunder Rücken, Physiotherapeutin Kärnten, Hobbysportler Therapie, Franziska Zuder">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-franziska.png">
-<link rel="icon" type="image/png" sizes="192x192" href="favicon-franziska.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-franziska.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-franziska.png">
   
   <!-- Structured Data für SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Physiotherapy",
+    "@type": "MedicalBusiness",
     "name": "Franziska Zuder",
     "image": "https://raw.githubusercontent.com/elaelaeladesign/franziskazuder/refs/heads/main/LOGO_Franziska_Zuder_4c_WEB_RGB.svg",
     "@id": "https://www.franziskazuder.at",
@@ -56,52 +56,30 @@
       text-rendering: optimizeLegibility;
     }
 
-    .hero-footer {
-  margin-top: 40px;
-  font-size: 0.85rem;
-  color: #ffffff;
-}
+    @font-face {
+      font-family: 'Krub';
+      src: url('./fonts/krub-regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
 
-.hero-footer a {
-  color: #ffffff;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.3s;
-}
+    @font-face {
+      font-family: 'Krub';
+      src: url('./fonts/krub-medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
 
-.hero-footer a:hover {
-  color: var(--accent-yellow);
-}
+    @font-face {
+      font-family: 'Krub';
+      src: url('./fonts/krub-semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
 
-
-
-@font-face {
-  font-family: 'Krub';
-  src: url('./fonts/krub-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Krub';
-  src: url('./fonts/krub-medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Krub';
-  src: url('./fonts/krub-semibold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-
-    
     header.header {
       background: var(--bg-white);
       display: flex;
@@ -123,6 +101,7 @@
       justify-content: center;
       text-align: center;
       padding: clamp(24px, 8vh, 120px) 16px;
+      flex-direction: column;
     }
     .hero-inner {
       max-width: 900px;
@@ -187,6 +166,24 @@
       font-size: 14px;
       color: #555;
     }
+    /* Hero Footer Links */
+    .hero-footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #ffffff;
+    }
+
+    .hero-footer a {
+      color: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.3s;
+    }
+
+    .hero-footer a:hover {
+      color: var(--accent-yellow);
+    }
+
     /* SEO versteckt */
     .sr-only {
       position: absolute;
@@ -232,7 +229,7 @@
       
       <img class="quote-icon" src="https://raw.githubusercontent.com/elaelaeladesign/franziskazuder/refs/heads/main/gaensefuesschen.svg" alt="Zitat Icon">
 
-      <p class="lead">Ich begleite Hobbysportler bei Schmerzen und Bewegungseinschr&auml;nkungen zu Leichtigkeit, Freude an gesunder Bewegung, Wohlbefinden und mehr Lebensqualit&auml;t.</p>
+      <p class="lead">Ich begleite Hobbysportler bei Schmerzen und Bewegungseinschränkungen zu Leichtigkeit, Freude an gesunder Bewegung, Wohlbefinden und mehr Lebensqualität.</p>
       
       <div class="keywords">
         <span>Rehabilitation</span>
@@ -243,14 +240,15 @@
       <p class="contact">
         Maria-Gailer-Straße 27, 9500 Villach (AT)<br>
         <a href="mailto:info@franziskazuder.at">info@franziskazuder.at</a><br>
-        <a href="tel:00436645675878">+43 664 / 567 587 8</a>
+        <a href="tel:+436645675878">+43 664 / 567 587 8</a>
       </p>
-    </div>
 
-    <div class="hero-footer">
-  <a href="impressum.html">Impressum</a> | 
-  <a href="datenschutz.html">Datenschutz</a>
-</div>
+      <!-- Footer-Links -->
+      <div class="hero-footer">
+        <a href="impressum.html">Impressum</a> | 
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
   </main>
 </body>
 </html>
