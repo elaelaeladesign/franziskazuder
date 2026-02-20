@@ -7,15 +7,72 @@
 <meta name="robots" content="noindex">
 
 <style>
+:root{
+  --brand-color: #40acb6;
+  --accent-yellow: #fbba00;
+  --text-color: #222;
+  --bg-color: #ffffff;
+}
+
+@font-face {
+  font-family: 'Krub';
+  src: url('./fonts/krub-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Krub';
+  src: url('./fonts/krub-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 body{
   font-family: 'Krub', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
   max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
-  line-height: 1.6;
+  margin: 80px auto;
+  padding: 0 24px;
+  line-height: 1.7;
 }
-h1{ margin-bottom:40px; }
-a{ color:inherit; }
+
+h1{
+  color: var(--brand-color);
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+p{
+  margin-bottom: 22px;
+}
+
+a{
+  color: var(--brand-color);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(64,172,182,0.3);
+  transition: all .2s ease;
+}
+
+a:hover{
+  color: var(--accent-yellow);
+  border-bottom: 1px solid var(--accent-yellow);
+}
+
+.footer-links{
+  margin-top: 80px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.footer-links a{
+  margin: 0 14px;
+}
 </style>
 </head>
 
@@ -51,13 +108,11 @@ Berufsbezeichnung: Physiotherapeutin<br>
 Verleihungsstaat: Österreich
 </p>
 
-<p>
-Quelle: Eigene Angaben
-</p>
-
-<p>
-<a href="/datenschutz.html">Datenschutz</a>
-</p>
+<div class="footer-links">
+  <a href="/">Startseite</a>
+  <a href="/impressum.html">Impressum</a>
+  <a href="/datenschutz.html">Datenschutz</a>
+</div>
 
 </body>
 </html>
