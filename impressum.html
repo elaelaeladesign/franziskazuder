@@ -12,6 +12,7 @@
       --brand-color: #40acb6;
       --text-dark: #333333;
       --bg-white: #ffffff;
+      --accent-yellow: #fbba00;
     }
     * { box-sizing: border-box; }
     body {
@@ -21,10 +22,11 @@
       background: var(--bg-white);
       color: var(--text-dark);
     }
+
     header.impressum-header {
       background: var(--brand-color);
-      padding: 60px 16px 40px;
-      text-align: center;
+      padding: 40px 16px;
+      text-align: left;
     }
     header.impressum-header h1 {
       color: #ffffff;
@@ -32,44 +34,69 @@
       margin: 0;
       font-weight: 600;
     }
+
     main.impressum-content {
       max-width: 900px;
-      margin: -20px auto 60px; /* zieht den weißen Bereich leicht hoch über den Balken */
-      background: var(--bg-white);
+      margin: 0 auto;
       padding: 40px 16px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background: var(--bg-white);
+      text-align: left;
     }
+
     main.impressum-content h2 {
       font-size: 1.25rem;
       margin-top: 24px;
     }
+
     main.impressum-content p,
     main.impressum-content li {
       margin: 12px 0;
       line-height: 1.6;
     }
+
     a {
       color: var(--brand-color);
       text-decoration: underline;
       text-underline-offset: 2px;
       transition: color 0.3s;
     }
+
     a:hover {
-      color: #fbba00; /* Gelb bei Hover */
+      color: var(--accent-yellow);
     }
+
+    .footer-links {
+      max-width: 900px;
+      margin: 20px auto 40px;
+      padding: 0 16px;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    .footer-links a {
+      color: var(--brand-color);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      margin: 0 6px;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-yellow);
+    }
+
     footer {
       text-align: center;
       font-size: 0.85rem;
       color: #777;
       margin-bottom: 40px;
     }
+
     @media (max-width: 768px) {
       header.impressum-header h1 {
         font-size: clamp(24px, 8vw, 36px);
       }
       main.impressum-content {
-        margin: -10px 16px 40px;
         padding: 32px 16px;
       }
     }
@@ -81,37 +108,45 @@
     <h1>Impressum</h1>
   </header>
 
-  <!-- Weißer Inhalt -->
+  <!-- Weißer Content-Bereich -->
   <main class="impressum-content">
-    <h2>Angaben gemäß § 5 TMG</h2>
-    <p>Franziska Zuder<br>
-       Maria-Gailer Straße 27<br>
-       9500 Villach, Österreich</p>
+    <h2>Medieninhaberin und verantwortlich für den Inhalt</h2>
+    <p>
+      Franziska Zuder<br>
+      Maria-Gailer-Str. 27, 9500 Villach<br>
+      Tel.: <a href="tel:+436645675878">+43 664/567 587 8</a><br>
+      E-Mail: <a href="mailto:info@franziskazuder.at">info@franziskazuder.at</a><br>
+      Web: <a href="https://www.franziskazuder.at" target="_blank">www.franziskazuder.at</a>
+    </p>
 
-    <h2>Kontakt</h2>
-    <p>Telefon: <a href="tel:+436645675878">+43 664 / 567 587 8</a><br>
-       E-Mail: <a href="mailto:info@franziskazuder.at">info@franziskazuder.at</a></p>
+    <h2>Gewerbeinformationen</h2>
+    <p>
+      Freiberufliche Ausübung der Physiotherapie gemäß MTD-Gesetz<br>
+      Registrierungsbehörde: Gesundheit Österreich GmbH
+    </p>
 
-    <h2>Konzept, Gestaltung & Umsetzung:</h2>
-   <p>
-
-<a href="https://www.astridfallosch.at" target="_blank" rel="noopener noreferrer">
-www.astridfallosch.at
-</a><br>
-<a href="https://www.eladesign.at" target="_blank" rel="noopener noreferrer">
-www.eladesign.at
-</a>
-</p>
+    <h2>Konzept, Gestaltung & Umsetzung</h2>
+    <p>
+      <a href="https://www.astridfallosch.at" target="_blank">www.astridfallosch.at</a><br>
+      <a href="https://www.eladesign.at" target="_blank">www.eladesign.at</a>
+    </p>
 
     <h2>Haftungsausschluss</h2>
-    <p>Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen.
-Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+    <p>
+      Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. 
+      Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+    </p>
   </main>
 
+  <!-- Footer Links -->
   <div class="footer-links">
-        <a href="/">Zurück zur Startseite</a> |
-        <a href="impressum.html">Impressum</a> |
-       <a href="datenschutz.html">Datenschutz</a>
-    </div>
+    <a href="/">Zurück zur Startseite</a> |
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a>
+  </div>
+
+  <footer>
+    &copy; 2026 Franziska Zuder
+  </footer>
 </body>
 </html>
