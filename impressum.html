@@ -1,118 +1,112 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Impressum – Franziska Zuder</title>
-<meta name="robots" content="noindex">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum – Franziska Zuder</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-franziska.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-franziska.png">
 
-<style>
-:root{
-  --brand-color: #40acb6;
-  --accent-yellow: #fbba00;
-  --text-color: #222;
-  --bg-color: #ffffff;
-}
-
-@font-face {
-  font-family: 'Krub';
-  src: url('./fonts/krub-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Krub';
-  src: url('./fonts/krub-medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-body{
-  font-family: 'Krub', sans-serif;
-  background: var(--bg-color);
-  color: var(--text-color);
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 0 24px;
-  line-height: 1.7;
-}
-
-h1{
-  color: var(--brand-color);
-  margin-bottom: 50px;
-  font-weight: 600;
-}
-
-p{
-  margin-bottom: 22px;
-}
-
-a{
-  color: var(--brand-color);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(64,172,182,0.3);
-  transition: all .2s ease;
-}
-
-a:hover{
-  color: var(--accent-yellow);
-  border-bottom: 1px solid var(--accent-yellow);
-}
-
-.footer-links{
-  margin-top: 80px;
-  padding-top: 30px;
-  border-top: 1px solid rgba(0,0,0,0.08);
-  text-align: center;
-  font-size: 0.95rem;
-}
-
-.footer-links a{
-  margin: 0 14px;
-}
-</style>
+  <style>
+    :root {
+      --brand-color: #40acb6;
+      --text-dark: #333333;
+      --bg-white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Krub', sans-serif;
+      line-height: 1.5;
+      background: var(--bg-white);
+      color: var(--text-dark);
+    }
+    header.impressum-header {
+      background: var(--brand-color);
+      padding: 60px 16px 40px;
+      text-align: center;
+    }
+    header.impressum-header h1 {
+      color: #ffffff;
+      font-size: clamp(28px, 6vw, 48px);
+      margin: 0;
+      font-weight: 600;
+    }
+    main.impressum-content {
+      max-width: 900px;
+      margin: -20px auto 60px; /* zieht den weißen Bereich leicht hoch über den Balken */
+      background: var(--bg-white);
+      padding: 40px 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    main.impressum-content h2 {
+      font-size: 1.25rem;
+      margin-top: 24px;
+    }
+    main.impressum-content p,
+    main.impressum-content li {
+      margin: 12px 0;
+      line-height: 1.6;
+    }
+    a {
+      color: var(--brand-color);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #fbba00; /* Gelb bei Hover */
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 768px) {
+      header.impressum-header h1 {
+        font-size: clamp(24px, 8vw, 36px);
+      }
+      main.impressum-content {
+        margin: -10px 16px 40px;
+        padding: 32px 16px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <!-- Türkiser Balken mit Überschrift -->
+  <header class="impressum-header">
+    <h1>Impressum</h1>
+  </header>
 
-<h1>Impressum</h1>
+  <!-- Weißer Inhalt -->
+  <main class="impressum-content">
+    <h2>Angaben gemäß § 5 TMG</h2>
+    <p>Franziska Zuder<br>
+       Maria-Gailer Straße 27<br>
+       9500 Villach, Österreich</p>
 
-<p>
-<strong>Franziska Zuder</strong><br>
-Maria-Gailer-Str. 27<br>
-9500 Villach<br>
-Österreich
-</p>
+    <h2>Kontakt</h2>
+    <p>Telefon: <a href="tel:+436645675878">+43 664 / 567 587 8</a><br>
+       E-Mail: <a href="mailto:info@franziskazuder.at">info@franziskazuder.at</a></p>
 
-<p>
-Telefon: <a href="tel:+436645675878">+43 664 567 587 8</a><br>
-E-Mail: <a href="mailto:info@franziskazuder.at">info@franziskazuder.at</a>
-</p>
+    <h2>Gestaltung & Konzept</h2>
+    <p>Design und Konzept der Webseite: <strong>Ela – Grafikerin</strong></p>
 
-<p>
-Freiberufliche Ausübung der Physiotherapie gemäß MTD-Gesetz
-</p>
+    <h2>Haftung für Inhalte</h2>
+    <p>Die Inhalte dieser Webseite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr.</p>
 
-<p>
-Registrierungsbehörde: 
-<a href="https://www.goeg.at/" target="_blank" rel="noopener">
-Gesundheit Österreich GmbH
-</a>
-</p>
+    <h2>Haftung für Links</h2>
+    <p>Verweise und Links auf externe Webseiten liegen außerhalb unseres Verantwortungsbereiches. Für den Inhalt der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.</p>
 
-<p>
-Berufsbezeichnung: Physiotherapeutin<br>
-Verleihungsstaat: Österreich
-</p>
+    <h2>Urheberrecht</h2>
+    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem österreichischen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+  </main>
 
-<div class="footer-links">
-  <a href="/">Startseite</a>
-  <a href="/impressum.html">Impressum</a>
-  <a href="/datenschutz.html">Datenschutz</a>
-</div>
-
+  <footer>
+    &copy; 2026 Franziska Zuder
+  </footer>
 </body>
 </html>
